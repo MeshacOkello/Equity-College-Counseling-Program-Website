@@ -1,0 +1,255 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    touch-action: none;
+}
+
+.top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+}
+    
+.other {
+    margin: 12rem 0rem 0rem 0rem;
+   
+}
+
+header {
+    background-color: maroon;
+    color: white;
+    padding: 15px;
+    text-align: center;
+
+    
+}
+h1 {
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    height: 25px;
+    display: flex;
+    background-color:white;
+    font-family: 'Trebuchet MS';
+    justify-content: center;
+    border: solid 2px maroon;
+    
+} 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 15px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    font-weight: 300;
+}
+a:hover{
+    color: maroon;
+}
+
+
+.space::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px; /* Adjust this value to fine-tune the position */
+    left: 0;
+    background-color: maroon;
+    transition: width 0.3s ease-out; /* Animation transition */
+    top: 100%;
+}
+
+.space:hover::before {
+    width: 100%;
+    top: 100%;
+}
+
+
+
+/* Your existing styles... */
+
+li.dropdown {
+    position: relative;
+}
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow:  maroon;
+    z-index: 1;
+    width: 170px;
+    margin: solid 2px maroon;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 16px;
+    transition:  0.3s ease-in-out;
+    font-weight: 100;
+}
+
+/* Style the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgba(128, 0, 0, 0.1);
+    color: maroon;
+}
+
+/* Show the dropdown content when the dropdown link is hovered */
+li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.mainImg {
+    height: 50%;
+    width: 60rem;
+    margin: 0rem 5rem 0rem 5rem;
+    transition: 0.3s;
+    border: 5px solid maroon;
+}
+.mainImg:hover {
+    box-shadow: 6px 6px 6px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+footer {
+    display: flex;
+    background-color: maroon;
+    margin-top: 100px;
+    height: 120px;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+}
+
+h2{ 
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+}
+
+
+
+/* Add a media query for responsive navigation */
+@media screen and (max-width: 600px) {
+    body {
+        max-width: fit-content;
+        margin: solid 5px violet;
+        align-items: center;
+        justify-content: center;
+    }
+    nav {
+        justify-content: center;
+       
+    }
+    .space {
+            background-color: whitesmoke;
+            border-bottom: 2px solid #ddd;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: auto;
+            font-size: 12px;
+            align-items: flex-start;
+            flex: 1;
+            color: rgb(7, 6, 6);
+            text-decoration: none;
+            text-align: center;
+            white-space: nowrap; 
+            padding: 4px;  
+    }
+    
+
+    ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    li {
+        margin: 7px 0;
+    }
+
+    .dropdown-content {
+        width: auto;
+        box-shadow: inset;
+    }
+
+    .imageholder {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .mainImg {
+        width: 100%;
+        height: auto;
+    }
+
+
+/* Adjust the footer for better spacing */
+footer {
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+header {
+    height: 60px;
+}
+h1 {
+    font-size: 25px;
+    color: white;
+
+}
+.dropdown-content {
+    display: none;
+    background-color: whitesmoke;
+    box-shadow:  rgba(128, 0, 0, 1);
+    z-index: 1;
+    width: 100px;
+    font-size: 7px;
+    top: 100%;
+   
+}
+
+.other {
+    margin: 10rem 0rem 0rem 0rem;
+   
+}
+
+.mainImg {
+    height: 50%;
+    width: 27rem;
+    margin: 0rem 1.8rem 0rem 1.8rem;
+    transition: 0.3s;
+    border: 5px solid maroon;
+}
+    }
+   
