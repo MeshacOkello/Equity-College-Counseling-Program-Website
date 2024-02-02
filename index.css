@@ -160,8 +160,7 @@ h2{
 /* Add a media query for responsive navigation */
 @media screen and (max-width: 600px) {
     body {
-        max-width: fit-content;
-        margin: solid 5px violet;
+        max-width: 90%;
         align-items: center;
         justify-content: center;
     }
@@ -252,10 +251,6 @@ h1 {
     transition: 0.3s;
     border: 5px solid maroon;
 }
-.content {
-    display: flex;
-    border: solid maroon 1px;
-    margin: 10rem;
-}
+
     }
    
