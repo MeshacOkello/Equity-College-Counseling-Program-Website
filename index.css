@@ -158,7 +158,7 @@ h2{
 
 
 /* Add a media query for responsive navigation */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     body {
         max-width: 90%;
         align-items: center;
