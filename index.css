@@ -253,7 +253,9 @@ h1 {
     border: 5px solid maroon;
 }
 .content {
-    margin: 3rem; 
+    display: flex;
+    border: solid maroon 1px;
+    margin: 10rem;
 }
     }
    
