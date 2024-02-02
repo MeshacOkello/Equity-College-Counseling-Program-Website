@@ -163,6 +163,7 @@ h2{
         max-width: 90%;
         align-items: center;
         justify-content: center;
+        margin: 15px;
     }
     nav {
         justify-content: center;
