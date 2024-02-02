@@ -168,6 +168,7 @@ h2{
     nav {
         justify-content: center;
         display: inline-block;
+        width: 80%;
        
     }
     .space {
