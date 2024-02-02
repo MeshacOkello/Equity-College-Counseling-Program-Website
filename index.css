@@ -252,5 +252,7 @@ h1 {
     transition: 0.3s;
     border: 5px solid maroon;
 }
+.content {
+    margin: 3rem;
     }
    
